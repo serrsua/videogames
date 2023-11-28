@@ -9,7 +9,7 @@ const genreSchema = new Schema({
   // Hacemos aquí la relación con el modelo de Videogame
   videogames: [
     {
-      type: mongoose.Schema.Types.ObjetcId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Videogame",
     },
   ],
