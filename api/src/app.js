@@ -1,5 +1,5 @@
 const express = require("express");
-// const routes = require('./routes/index.js');
+const routes = require('./routes/index.js');
 
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
@@ -27,6 +27,6 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
 });
 
 // Routes
-// app.use('/', routes);
+app.use('/', routes);
 
 module.exports = app;
