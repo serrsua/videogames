@@ -29,7 +29,7 @@ const videogameSchema = new Schema({
   // Hacemos aquí la relación con el modelo de géneros
   genres: [
     {
-      type: Schema.Types.ObjectId,
+      type: [String],
       ref: "Genre",
     },
   ],
